@@ -6,9 +6,9 @@
 nav {
     position: fixed;
     width: 100%;
-    background-color:white;
+    background-color:#0A0A22;
     padding: 15px;
-    border-bottom: grey solid 1px;
+    color: white;
 }
 
 .navList {
@@ -17,68 +17,100 @@ nav {
     justify-content: flex-end;
     justify-content: space-around;
     font-size: 1.5em;
+    font-family: 'Bitter', sans-serif;
 }
 
 main {
     display: flex;
     flex-direction: column;
     padding-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    color: #0A0A22;
+}
+/* Header Section */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 1.5px;
 }
 
+/* About Section */
 .about {
     padding: 30px  500px;
     width: 100%;
-    border-bottom: solid grey 2px;
-    text-align: center;
+    display: flex;
+    flex-direction: column; 
 }
 
 .about p {
     padding: 7px;
-}
-
-.about h2 {
-    padding-bottom: 10px;
+    text-align: left;
+    letter-spacing: 1.5px;
 }
 
 .aboutImage {
     padding-top: 10px;
-    border-radius: 50px;
+    text-align: center;
 }
 
+/* Projects Section */
 .projects {
-    padding: 30px  500px;
-    display: block;
+    padding: 30px  450px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    border-bottom: solid grey 2px;
-    text-align: center;
 }
 
 .projects h2 {
     padding-bottom: 15px;
+    text-align: center;
+    letter-spacing: 1.5px;
 }
 
 .thumbnail {
     margin: 15px;
-    border-radius: 50px;
-}
-
-/* Skills Section */
-
-.skills {
     text-align: center;
-    padding: 30px  500px;
-    border-bottom: solid grey 2px;  
+    height: 45em;
 }
 
-.skills p {
-    margin: 15px;
+.projects p {
+    text-align: left;
 }
 
+/* Contact Section */
 .contact {
-    text-align: center;
-    padding: 30px  500px;
+    padding: 30px  350px;
+    display: flex;
+    flex-direction: column;
 }
 
-.contact p {
-    margin: 15px;
+.contact h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact p {    
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 350px;
+}
+
+#gmail {
+    height: 52px;
+    width: 60px;
+}
+
+#linkedin {
+    height: 55px;
+    width: 60px;
+}
+
+#github {
+    height: 65px;
+    width: 65px;
 }
