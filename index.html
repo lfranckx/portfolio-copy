@@ -4,53 +4,79 @@
         <title>Portfolio Wireframe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="index.css">
-        <link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans|Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Crimson+Text|Maven+Pro|Old+Standard+TT|Oswald|PT+Serif|Squada+One|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <nav role="navigation">
             <ul class="navList">
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li goto="header">About</li>
+                <li goto="projects">Projects</li>
+                <li goto="contact">Contact</li>
             </ul>
         </nav>
 
         <main role="main">  
-            <header role="banner">
+            <header role="banner" id="header">
                 <h1>Lachlan Franckx</h1>
             </header>
             <section role="article" class="about">
-                <p>Web developer currently enrolled at Bloc, a Front End Web Development 
-                Career Path Bootcamp.</p>
-                <p>My passion as a web developer is in learning the languages, 
-                understanding frameworks, and how front and back ends work together.
-                Outside of coding I enjoy surfing, rock climbing, and making music. 
-                I am an avid learner of life and constantly exploring new things in life.</p>
-                <img class="aboutImage" src="http://placeimg.com/600/400/tech">
-            </section>
-            <section role="article" class="projects">
-                <h2>Projects</h2>
-                <img class="thumbnail" src="images/quizapp_image.jpg">
-                <p class="description">Interactive quiz app that takes users through a series of
-                questions and provides them feedback on whether the answer
-                is right or wrong.  Also, updates the score and question
-                number and calculates a passing or failing score, which
-                results in a pass or fail screen prompting the user to
-                restart the quiz.</p>
-            </section>
-            <section role="article" class="contact">
-                <h2>Contact</h2>
-                <p>I am seeking a career with a greater intellectual pursuit and enthusiastic
-                 about the possibilities of web development.
-                <p>Please feel free to reach me through any of these sources.</p>
+                <div class="textContainer">
+                    <p class="text">Web developer currently enrolled at Bloc, a Front End Web Development 
+                    Career Path Bootcamp.</p>
+                    <p class="text">My passion as a web developer is in learning the languages, 
+                    understanding frameworks, and how front and back ends work together.</p>
+                    <p class="text">Outside of coding I enjoy surfing, rock climbing, and making music. 
+                    I am an avid learner and constantly exploring new things in life.</p>
+                </div> 
             </section>
 
-            <footer class="icons">
-                <img id="gmail" src="images/icons/gmail_icon.jpg">
-                <img id="linkedin"src="images/icons/linkedin_icon.jpg">
-                <img id="github"src="images/icons/github_icon.jpg">
+            <section role="article" id="projects">
+                <h2>Projects</h2>
+                <div class="container">
+                    <div class="projectContainer">
+                        <img class="thumbnail" src="images/quizapp_image.jpg">
+                        <div class="techIconContainer">
+                            <img class="techIcons" src="images/icons/html5_icon.jpg">
+                            <img class="techIcons" src="images/icons/css3_icon.jpg">
+                            <img class="techIcons" src="images/icons/javascript_icon.jpg">
+                        </div>
+                        <p class="description">
+                            Interactive quiz app that takes users through a series of
+                            questions and provides them feedback on whether the answer
+                            is right or wrong.</p>
+                        <p class="description">    
+                            Also, updates the score and question
+                            number and calculates a passing or failing score, which
+                            results in a pass or fail screen prompting the user to
+                            restart the quiz.</p>
+                    </div>
+                </div>
+                <div class="linksContainer">
+                    <a id="githubLink" href="https://github.com/lfranckx/quizapp" target="_blank">Github</a>
+                    <p>|</p>
+                    <a id="demoLink" href="https://lfranckx.github.io/quizapp/" target="_blank">Demo</a>
+                </div>
+            </section>
+
+            <section role="article" id="contact">
+                <h2>Contact</h2>
+                <div class="textContainer">
+                    <p class="text">I am seeking a career with a greater intellectual pursuit and enthusiastic
+                    about the possibilities of web development.</p>
+                    <p class="text">Please feel free to reach me through any of these sources.</p>
+                </div>
+            </section>
+
+            <footer role="contentinfo">
+                <div class="contactContainer">
+                    <a href="mailto:lfranckx@gmail.com"><img class ="icons" id="gmail" src="images/icons/gmail_icon.jpg"></a>
+                    <a href="https://www.linkedin.com/in/lachlanfranckx/" target="_blank"><img class="icons" id="linkedin"src="images/icons/linkedin_icon.jpg"></a>
+                    <a href="https://github.com/lfranckx" target="_blank"><img class="icons" id="github"src="images/icons/github_icon.jpg"></a>
+                </div>
             </footer>
         </main>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
