@@ -184,6 +184,29 @@ footer {
     bottom: 4px;
 }
 
+@media screen and (max-width: 500px) {
+
+    .about {
+        padding: 30px 20px;
+    }
+
+    #projects {
+        padding: 60px 20px;
+    }
+
+    #contact {
+        padding: 30px 20px 15px;
+    }
+    .thumbnail {
+        height: 15em;
+        width: 19.75em;
+    }
+
+    #contact p {
+        text-align: left;
+    }
+}
+
 @media screen and (max-width: 700px) {
 
     .about {
