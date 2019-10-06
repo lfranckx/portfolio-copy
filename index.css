@@ -12,8 +12,26 @@ nav {
     position: fixed;
     width: 100%;
     background-color: #1e3333;
-    padding: 10px;
+    padding: 10px 20px;
     color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.name {
+    width: 25%;
+    font-size: 2em;
+    font-family: 'Amatic SC', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.space {
+    width: 25%;
+}
+
+.hamburger {
+    font-size: 2em;
 }
 
 .navList {
@@ -23,6 +41,7 @@ nav {
     justify-content: space-around;
     font-size: 2em;
     font-family: 'Amatic SC', sans-serif;
+    width: 50%;
 }
 
 .navList li {
@@ -46,7 +65,7 @@ h1 {
     text-align: center;
     margin-top: 30px;
     letter-spacing: 1.5px;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 /* About Section */
@@ -185,6 +204,17 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    .name {
+        width: 50%
+    }
+
+    .space {
+        display: none;
+    }
+
+    nav ul li {
+        display: none;
+    }
 
     .about {
         padding: 30px 20px;
@@ -208,6 +238,17 @@ footer {
 }
 
 @media screen and (min-width: 501px) and (max-width: 700px) {
+    .name {
+        width: 50%
+    }
+
+    .space {
+        display: none;
+    }
+
+    nav ul li {
+        display: none;
+    }
 
     .about {
         padding: 30px 20px;
@@ -231,6 +272,18 @@ footer {
 }
 
 @media screen and (min-width: 701px) and (max-width: 805px) {
+    .name {
+        width: 50%
+    }
+
+    .space {
+        display: none;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
     .about {
         padding: 30px 20px;
     }
@@ -245,5 +298,11 @@ footer {
 
     #contact p {
         text-align: left;
+    }
+}
+
+@media screen and (min-width: 806px) {
+    .hamburger {
+        display: none;
     }
 }
