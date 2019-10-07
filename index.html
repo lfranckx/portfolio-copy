@@ -2,9 +2,12 @@
 <html lang="en">
     <head>
         <title>Lachlan's Portfolio</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="index.css">
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Crimson+Text|Maven+Pro|Old+Standard+TT|Oswald|PT+Serif|Squada+One|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Asap|Asap+Condensed|Hind+Siliguri|News+Cycle|Quicksand|Raleway|Ubuntu+Condensed|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -16,8 +19,16 @@
                 <li goto="projects">Projects</li>
                 <li goto="contact">Contact</li>
             </ul>
-            <div class="hamburger">&#9776;</div>
+
+            <label class="hamburger" for="toggle">&#9776;</label>
         </nav>
+
+        <input type="checkbox" id="toggle"/>
+            <ul class="dropMenu">
+                <li goto="header">About</li>
+                <li goto="projects">Projects</li>
+                <li goto="contact">Contact</li>
+            </ul>
 
         <main role="main">  
             <header role="banner" id="header">

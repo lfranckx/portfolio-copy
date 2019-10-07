@@ -6,22 +6,25 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Crimson Text', sans-serif;
+    background-color: #edf6ff; 
 }
 
 nav {
     position: fixed;
     width: 100%;
-    background-color: #1e3333;
     padding: 10px 20px;
-    color: white;
     display: flex;
     justify-content: space-around;
+    font-family: 'Asap', sans-serif;
+    background-color: #334848;
+    color: white;
+    font-family: 'Amatic SC', sans-serif;
 }
 
 .name {
     width: 25%;
     font-size: 2em;
-    font-family: 'Amatic SC', sans-serif;
     display: flex;
     justify-content: space-around;
 }
@@ -30,17 +33,12 @@ nav {
     width: 25%;
 }
 
-.hamburger {
-    font-size: 2em;
-}
-
 .navList {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
     justify-content: space-around;
     font-size: 2em;
-    font-family: 'Amatic SC', sans-serif;
     width: 50%;
 }
 
@@ -48,15 +46,44 @@ nav {
     cursor: pointer;
 }
 
-.navList li:active {
-    /* color: blue; */
+.dropMenu {
+    list-style-type: none;
+    font-size: 2em;
+    padding: 20px 20px 20px 30px;
+    display: none;
+    border-radius: 2px;
+    background-color: #334848;
+    color:white;
 }
 
-main {
-    font-family: 'Crimson Text', sans-serif;
-    background-color: #edf6ff;
+.dropMenu li {
+    text-align: right;
+    cursor: pointer;
+    border-bottom: solid white 1px;
 }
-/* Header Section */
+
+.hamburger {
+    display: block;
+    font-size: 2em;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .dropMenu {
+    display: block;
+    width: 30%;
+    position: fixed;
+    top: 50px;
+    right: 0;   
+}
+
+/* About Section */
+main {
+ 
+}
+
 #header {
     padding-top: 60px;
 }
@@ -68,7 +95,6 @@ h1 {
     font-size: 40px;
 }
 
-/* About Section */
 .about {
     padding: 30px 60px;
     width: 100%;
@@ -172,7 +198,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-bottom: 10px; */
 }
 
 .contactContainer {
@@ -205,35 +230,75 @@ footer {
 
 @media screen and (max-width: 500px) {
     .name {
-        width: 50%
+        width: 60%
     }
 
     .space {
         display: none;
     }
 
-    nav ul li {
+    .navList {
         display: none;
+    }
+
+    label {
+        display: block
+    }
+
+    h1 {
+        font-size: 35px;
     }
 
     .about {
         padding: 30px 20px;
     }
 
+    #projects h2 { 
+        font-size: 35px;
+    }
+
     #projects {
         padding: 60px 20px;
     }
 
+    #contact h2 {
+        font-size: 35px;
+    }
     #contact {
         padding: 30px 20px 15px;
     }
+
     .thumbnail {
-        height: 15em;
-        width: 19.75em;
+        height: 12em;
+        width: 15.8em;
+    }   
+
+    .techIcons {
+        height: 30px;
+        width: 30px;
     }
 
     #contact p {
         text-align: left;
+    }
+
+    .icons {
+        margin: 0 20px;
+    }
+
+    #gmail {
+        height: 38px;
+        width: 46px;
+    }
+    
+    #linkedin {
+        height: 41px;
+        width: 46px;
+    }
+    
+    #github {
+        height: 46px;
+        width: 46px;
     }
 }
 
